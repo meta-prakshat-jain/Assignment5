@@ -54,13 +54,14 @@ public class NKnight {
         visited[0][0] = true; 
         return helper(grid, 0, 0, 1, visited);
     }
+	
 	public static void main(String[] args) { 
 		NKnight knight = new NKnight();
 	int[][] validGrid1 = { {0, 3, 6, 9, 12}, 
-						   {7, 10, 1, 4, 15}, 
-						   {2, 5, 8, 11, 16}, 
-						   {13, 18, 21, 24, 19}, 
-						   {22, 25, 20, 17, 14} }; //5X5
+				{7, 10, 1, 4, 15}, 
+				{2, 5, 8, 11, 16}, 
+				{13, 18, 21, 24, 19}, 
+				{22, 25, 20, 17, 14} };
 	printGrid(validGrid1); 
 	System.out.println("Result: " + knight.checkValidGrid(validGrid1)); 
 	System.out.println();
